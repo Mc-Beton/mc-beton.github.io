@@ -1,0 +1,145 @@
+html {
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0; }
+
+input,
+textarea {
+   width: 100%;
+   padding: 5px;
+   margin: 0;
+   border-radius: 2px;
+   border: 1px solid #ccc; }
+
+body {
+   margin: 0;
+   padding: 0; }
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit; }
+
+.crud {
+   margin-bottom: 20px; }
+
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto; }
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px; } }
+@media (min-width: 992px) {
+   .container {
+     width: 970px; } }
+@media (min-width: 1200px) {
+   .container {
+     width: 1170px; } }
+.kodilla-heading--main {
+   margin: 20px auto;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 400; }
+
+.datatable__row {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+   align-items: stretch;
+   border: 1px solid #ccc;
+   border-bottom: none;
+   margin: 0; }
+
+.datatable__row:first-of-type {
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px; }
+
+.datatable__row:last-of-type {
+   border-bottom: 1px solid #ccc;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px; }
+
+.datatable__row input,
+.datatable__row textarea {
+   display: none; }
+
+.datatable__row .datatable__button--editing {
+   display: none; }
+
+.datatable__row--editing input,
+.datatable__row--editing textarea {
+   display: block; }
+
+.datatable__row--editing .datatable__field-value {
+   display: none; }
+
+.datatable__row--editing .datatable__button {
+   display: none; }
+
+.datatable__row--editing .datatable__button--editing {
+   display: block; }
+
+.datatable__row--add input,
+.datatable__row--add textarea {
+   display: block; }
+
+.datatable__field-value {
+   margin-bottom: 0;
+   font-size: 14px; }
+
+.datatable__row-section {
+   border: none;
+   margin: 0;
+   padding: 10px;
+   flex-grow: 1; }
+
+.datatable__row-section--button-section {
+   margin-left: auto;
+   align-self: center;
+   flex-shrink: 1;
+   flex-grow: 0;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-around;
+   align-items: center; }
+
+.datatable__input-label {
+   display: block;
+   text-align: left;
+   font-size: 14px;
+   margin: 5px auto;
+   font-weight: 500;
+   letter-spacing: 0.6px; }
+
+.datatable__button {
+   color: #fff;
+   background-color: #28a745;
+   display: block;
+   margin-bottom: 5px;
+   font-weight: 400;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   user-select: none;
+   border: 1px solid transparent;
+   padding: 8px 12px;
+   font-size: 12px;
+   min-width: 120px;
+   line-height: 1.25;
+   border-radius: 4px; }
+
+.datatable__tasks-container:empty {
+   position: relative; }
+
+.datatable__tasks-container:empty::after {
+   content: 'Currently, there are no tasks available.'; }
+
+.template {
+   display: none;
+}
