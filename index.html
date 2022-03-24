@@ -52,7 +52,6 @@
       </label>
       <input type="text" name="title" placeholder="Insert a new task name" data-task-name-input required minlength="3">
       <p class="datatable__field-value" data-task-name-paragraph></p>
-
     </fieldset>
 
     <fieldset class="datatable__row-section datatable__row-section--input-section" data-task-content-section>
@@ -61,19 +60,33 @@
       </label>
       <textarea name="title" placeholder="Insert new task content" data-task-content-input required minlength="3"></textarea>
       <p class="datatable__field-value" data-task-content-paragraph></p>
-
     </fieldset>
 
-    <fieldset class="datatable__row-section datatable__row-section--button-section">
-      <button type="button" data-task-submit-update-button class="datatable__button datatable__button--editing ">Submit update</button>
-      <button type="button" data-task-edit-abort-button class="datatable__button datatable__button--editing">Abort update</button>
-      <button type="button" data-task-edit-button class="datatable__button">Edit</button>
-      <button type="button" data-task-delete-button class="datatable__button">Delete</button>
-    </fieldset>
+    <div class="datatable__row-section-wrapper">
+      <fieldset class="datatable__row-section datatable__row-section--button-section">
+        <button type="button" data-task-submit-update-button class="datatable__button datatable__button--editing ">Submit update</button>
+        <button type="button" data-task-edit-abort-button class="datatable__button datatable__button--editing">Abort update</button>
+        <button type="button" data-task-edit-button class="datatable__button">Edit</button>
+        <button type="button" data-task-delete-button class="datatable__button">Delete</button>
+      </fieldset>
+
+      <fieldset class="datatable__row-section datatable__row-section--trello-section">
+        <select class="datatable__select" name="board-name" data-board-name-select>
+          <option disabled selected>--- select an board ---</option>
+        </select>
+        <select class="datatable__select" name="list-name" data-list-name-select>
+          <option disabled selected>--- select a list ---</option>
+        </select>
+        <button type="button" data-trello-card-creation-trigger class="datatable__button datatable__button--card-creation">
+          Create a card
+        </button>
+      </fieldset>
+    </div>
   </form>
 </div>
 
 <script src="jquery-3.6.0.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
