@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  const apiRoot = 'https://kodilla-tasks-fg.herokuapp.com/v1/tasks';
-  const trelloApiRoot = 'https://api.trello.com/1/members/elfilberto';
+  var apiRoot = 'https://kodilla-tasks-fg.herokuapp.com/v1/tasks';
+  var trelloApiRoot = 'https://api.trello.com/1/members/elfilberto';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
